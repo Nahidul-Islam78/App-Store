@@ -12,14 +12,14 @@ const HomeApp = ({ app }) => {
         <p className="inter-font text-xl font-medium my-4">{title}</p>
       </div>
       <div className="flex justify-between items-center">
-        <p className="flex items-center ">
-          <img className="h-4 w-4 mr-1" src={downloadIcon} alt="" />
-          <p>{downloads}</p>
-        </p>
-        <p className="flex items-center ">
-          <img className="h-4 w-4  mr-1" src={ratingIcon} alt="" />
-          <p>{ratingAvg}</p>
-        </p>
+        <div className="flex items-center bg-[#f1f5e8] rounded-sm p-2">
+                   <img className="h-4 w-4 mr-1" src={downloadIcon} alt="" />
+                   <p className="text-[#00d390] font-medium">{downloads}</p>
+                 </div>
+                 <div className="flex items-center bg-[#fff0e1] rounded-sm p-2">
+                   <img className="h-4 w-4  mr-1" src={ratingIcon} alt="" />
+                   <p className="text-[#ff8811] font-medium">{ratingAvg}</p>
+                 </div>
       </div>
     </div>
   );

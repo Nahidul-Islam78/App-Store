@@ -42,7 +42,7 @@ const Header = () => {
             </ul>
           </div>
 
-          <Link to='/'>
+          <Link to="/">
             <p className="btn btn-ghost text-xl">
               <img className="h-10 w-10" src={logo} alt="app logo" />
               <span className="bg-gradient-to-l from-[#9f62f2] to-[#632ee3] text-transparent bg-clip-text inter-font font-bold">
@@ -53,12 +53,16 @@ const Header = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <a className="font-medium inter-font">Home</a>
-            </li>
-            <li>
-              <a className="font-medium inter-font">Apps</a>
-            </li>
+            <Link to=''>
+              <li>
+                <p className="font-medium inter-font">Home</p>
+              </li>
+            </Link>
+            <Link to="Apps">
+              <li>
+                <p className="font-medium inter-font">Apps</p>
+              </li>
+            </Link>
             <li>
               <a className="font-medium inter-font">Installation</a>
             </li>
