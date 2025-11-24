@@ -41,13 +41,14 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <Link to="/">
-            <a className="btn btn-ghost text-xl">
+
+          <Link to='/'>
+            <p className="btn btn-ghost text-xl">
               <img className="h-10 w-10" src={logo} alt="app logo" />
               <span className="bg-gradient-to-l from-[#9f62f2] to-[#632ee3] text-transparent bg-clip-text inter-font font-bold">
                 HERO.IO
               </span>
-            </a>
+            </p>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
