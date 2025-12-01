@@ -3,12 +3,11 @@ import { useLoaderData } from 'react-router';
 import App from '../../component/App/App';
 import NotFoundApp from '../../component/NotFoundApp/NotFoundApp';
 
+
 const Apps = () => {
   const data = useLoaderData();
   const [apps, setApps] = useState(data)
   const handelSearchControl = (e) => {
-    
-
     const searchValue = e.target.value;
     
     const searChValueUpper = searchValue.toUpperCase();
@@ -68,6 +67,7 @@ const Apps = () => {
           apps.map(app => <App app={app} key={app.id}></App>)
         )}
       </div>
+      
     </div>
   );
 };
