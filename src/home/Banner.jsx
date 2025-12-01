@@ -5,7 +5,7 @@ import AppStore from '../assets/assets/app-store.png'
 
 const Banner = () => {
   return (
-    <div className="bg-[#f5f5f5] flex flex-col justify-center items-center py-20 px-2">
+    <div className="bg-[#f5f5f5] flex flex-col justify-center items-center pt-20 px-2">
       <div>
         <p className="md:text-center inter-font font-bold text-7xl ">
           We Build{' '}

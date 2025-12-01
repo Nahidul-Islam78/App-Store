@@ -30,15 +30,21 @@ const Header = () => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a className="font-medium inter-font">Home</a>
-              </li>
-              <li>
-                <a className="font-medium inter-font">Apps</a>
-              </li>
-              <li>
-                <a className="font-medium inter-font">Installation</a>
-              </li>
+              <Link to="">
+                <li>
+                  <p className="font-medium inter-font">Home</p>
+                </li>
+              </Link>
+              <Link to="Apps">
+                <li>
+                  <p className="font-medium inter-font">Apps</p>
+                </li>
+              </Link>
+              <Link to="Installation">
+                <li>
+                  <p className="font-medium inter-font">Installation</p>
+                </li>
+              </Link>
             </ul>
           </div>
 
@@ -53,7 +59,7 @@ const Header = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <Link to=''>
+            <Link to="">
               <li>
                 <p className="font-medium inter-font">Home</p>
               </li>
@@ -63,9 +69,11 @@ const Header = () => {
                 <p className="font-medium inter-font">Apps</p>
               </li>
             </Link>
-            <li>
-              <a className="font-medium inter-font">Installation</a>
-            </li>
+            <Link to="Installation">
+              <li>
+                <p className="font-medium inter-font">Installation</p>
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="navbar-end">
