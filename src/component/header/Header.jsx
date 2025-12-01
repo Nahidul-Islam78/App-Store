@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 const Header = () => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="px-5 md:px-10 border-b-2 border-[#e9e9e9]">
       <div className="navbar bg-base-100 ">
         <div className="navbar-start">
           <div className="dropdown">

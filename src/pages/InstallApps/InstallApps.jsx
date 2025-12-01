@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router';
 import { getInstalAppList, removeApp } from '../../utility/appIdDb';
-import downloadIcon from '../../assets/assets/icon-downloads.png'
-import ratingIcon from '../../assets/assets/icon-ratings.png'
+import downloadIcon from '../../assets/assets/icon-downloads.png';
+import ratingIcon from '../../assets/assets/icon-ratings.png';
+import { toast } from 'react-toastify';
+
 
 const InstallApps = () => {
   const data = useLoaderData();
@@ -26,6 +28,7 @@ const InstallApps = () => {
     removeApp(id);
     const newInstallApps = installApp.filter(app => !(id === app.id));
     setInstallApp(newInstallApps);
+    toast.success('Complete Uninstalled!');
 
 
   }

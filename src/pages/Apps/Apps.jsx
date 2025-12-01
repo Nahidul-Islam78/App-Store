@@ -6,7 +6,9 @@ import NotFoundApp from '../../component/NotFoundApp/NotFoundApp';
 const Apps = () => {
   const data = useLoaderData();
   const [apps, setApps] = useState(data)
-  const handelSearchControl= (e) => {
+  const handelSearchControl = (e) => {
+    
+
     const searchValue = e.target.value;
     
     const searChValueUpper = searchValue.toUpperCase();
@@ -60,9 +62,11 @@ const Apps = () => {
         </div>
       </div>
       <div className="my-10 bg-[#f5f5f5] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {apps.length===0?<NotFoundApp></NotFoundApp>:apps.map(app => (
-          <App app={app} key={app.id}></App>
-        ))}
+        {apps.length === 0 ? (
+          <NotFoundApp></NotFoundApp>
+        ) : (
+          apps.map(app => <App app={app} key={app.id}></App>)
+        )}
       </div>
     </div>
   );

@@ -5,10 +5,12 @@ import Home from '../home/Home';
 import Apps from '../pages/Apps/Apps';
 import AppDetails from '../pages/AppDitails/AppDetails';
 import InstallApps from '../pages/InstallApps/InstallApps';
+import ErrorPage from '../pages/ErrorPage/ErrorPage';
 export const router = createBrowserRouter([
   {
     path: '/',
     Component: Root,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         index: true,
